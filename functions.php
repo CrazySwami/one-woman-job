@@ -10,6 +10,14 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
+// Force HTTPS when behind Cloudflare/reverse proxy
+if (
+    (!empty($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] === 'https') ||
+    (!empty($_SERVER['HTTP_CF_VISITOR']) && strpos($_SERVER['HTTP_CF_VISITOR'], 'https') !== false)
+) {
+    $_SERVER['HTTPS'] = 'on';
+}
+
 // Theme version
 define('OWJ_VERSION', '1.0.0');
 define('OWJ_DIR', get_template_directory());

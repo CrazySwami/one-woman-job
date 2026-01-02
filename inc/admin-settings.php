@@ -257,6 +257,27 @@ function owj_settings_page() {
                     </tr>
                     <tr>
                         <th scope="row">
+                            <label for="about_image"><?php esc_html_e('About Image', 'owj'); ?></label>
+                        </th>
+                        <td>
+                            <div class="owj-media-upload">
+                                <input type="text" id="about_image" name="owj_options[about_image]"
+                                       value="<?php echo esc_url($options['about_image'] ?? ''); ?>"
+                                       class="regular-text">
+                                <button type="button" class="button owj-upload-btn" data-target="about_image">
+                                    <?php esc_html_e('Upload Image', 'owj'); ?>
+                                </button>
+                            </div>
+                            <?php if (!empty($options['about_image'])) : ?>
+                            <div class="owj-image-preview" style="margin-top: 10px;">
+                                <img src="<?php echo esc_url($options['about_image']); ?>" style="max-width: 300px; height: auto;">
+                            </div>
+                            <?php endif; ?>
+                            <p class="description"><?php esc_html_e('This image appears in the About section below the services.', 'owj'); ?></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
                             <label for="hero_welcome"><?php esc_html_e('Welcome Text', 'owj'); ?></label>
                         </th>
                         <td>
@@ -476,7 +497,7 @@ function owj_settings_page() {
                         </th>
                         <td>
                             <input type="text" id="company_phone" name="owj_options[company_phone]"
-                                   value="<?php echo esc_attr($options['company_phone'] ?? '352-808-4623'); ?>"
+                                   value="<?php echo esc_attr($options['company_phone'] ?? '352-988-4621'); ?>"
                                    class="regular-text">
                         </td>
                     </tr>

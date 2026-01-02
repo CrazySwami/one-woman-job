@@ -105,7 +105,7 @@ function owj_handle_wizard_submit() {
     $options['service_area'] = sanitize_text_field($_POST['service_area'] ?? 'Serving All Of Central Florida');
 
     // Contact info
-    $options['company_phone'] = sanitize_text_field($_POST['company_phone'] ?? '352-808-4623');
+    $options['company_phone'] = sanitize_text_field($_POST['company_phone'] ?? '352-988-4621');
     $options['contact_email'] = sanitize_email($_POST['contact_email'] ?? 'OneWomanJob@Gmail.com');
 
     // Social links
@@ -220,7 +220,7 @@ function owj_wizard_page() {
                     <div class="owj-form-group">
                         <label for="company_phone"><?php esc_html_e('Phone Number', 'owj'); ?></label>
                         <input type="tel" id="company_phone" name="company_phone"
-                               value="<?php echo esc_attr($options['company_phone'] ?? '352-808-4623'); ?>"
+                               value="<?php echo esc_attr($options['company_phone'] ?? '352-988-4621'); ?>"
                                class="regular-text" required>
                     </div>
 
