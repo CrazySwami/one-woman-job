@@ -19,7 +19,7 @@ if (
 }
 
 // Theme version
-define('OWJ_VERSION', '1.0.0');
+define('OWJ_VERSION', '1.0.1');
 define('OWJ_DIR', get_template_directory());
 define('OWJ_URI', get_template_directory_uri());
 
