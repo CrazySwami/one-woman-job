@@ -1,0 +1,243 @@
+/**
+ * One Woman Job - Setup Wizard Styles
+ */
+
+.owj-wizard-wrap {
+    max-width: 700px;
+    margin: 40px auto;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.owj-wizard-header {
+    text-align: center;
+    padding: 40px;
+    background: linear-gradient(135deg, #f8e4e4, #e2bfbf);
+    border-radius: 12px 12px 0 0;
+}
+
+.owj-wizard-header h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: #3d3d3d;
+    letter-spacing: 3px;
+    font-family: 'Georgia', serif;
+}
+
+.owj-wizard-header p {
+    margin: 10px 0 0;
+    color: #5a5a5a;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.owj-wizard-content {
+    background: #fff;
+    padding: 30px 40px 40px;
+    border: 1px solid #e8dcd0;
+    border-top: none;
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+/* Steps */
+.owj-wizard-steps {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #f5f1ea;
+}
+
+.owj-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    opacity: 0.4;
+    transition: opacity 0.3s ease;
+}
+
+.owj-step.active,
+.owj-step.completed {
+    opacity: 1;
+}
+
+.step-number {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f5f1ea;
+    border-radius: 50%;
+    font-weight: 600;
+    color: #5a5a5a;
+    transition: all 0.3s ease;
+}
+
+.owj-step.active .step-number {
+    background: #e2bfbf;
+    color: #fff;
+}
+
+.owj-step.completed .step-number {
+    background: #d4a8a8;
+    color: #fff;
+}
+
+.step-title {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #888;
+}
+
+/* Panels */
+.owj-wizard-panel {
+    display: none;
+}
+
+.owj-wizard-panel.active {
+    display: block;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.owj-wizard-panel h2 {
+    margin: 0 0 10px;
+    color: #3d3d3d;
+    font-size: 1.5rem;
+}
+
+.owj-wizard-panel > .description {
+    color: #888;
+    margin-bottom: 30px;
+}
+
+/* Form Groups */
+.owj-form-group {
+    margin-bottom: 25px;
+}
+
+.owj-form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #3d3d3d;
+}
+
+.owj-form-group .optional {
+    font-weight: normal;
+    color: #888;
+    font-size: 0.85rem;
+}
+
+.owj-form-group input[type="text"],
+.owj-form-group input[type="email"],
+.owj-form-group input[type="tel"],
+.owj-form-group input[type="url"],
+.owj-form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.owj-form-group input:focus,
+.owj-form-group textarea:focus {
+    outline: none;
+    border-color: #e2bfbf;
+    box-shadow: 0 0 0 3px rgba(226, 191, 191, 0.2);
+}
+
+.owj-form-group .description {
+    margin-top: 8px;
+    font-size: 0.85rem;
+    color: #888;
+}
+
+/* Media Upload */
+.owj-media-upload {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.owj-media-upload input {
+    flex: 1;
+}
+
+.owj-image-preview {
+    margin-top: 15px;
+}
+
+.owj-image-preview img {
+    border-radius: 8px;
+    border: 1px solid #eee;
+}
+
+/* Finish Panel */
+.owj-finish-icon {
+    font-size: 4rem;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.owj-summary {
+    background: #f9f5ef;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.owj-summary h3 {
+    margin: 0 0 15px;
+    font-size: 1rem;
+    color: #5a5a5a;
+}
+
+.owj-summary ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.owj-summary li {
+    margin-bottom: 8px;
+    color: #5a5a5a;
+}
+
+/* Navigation */
+.owj-wizard-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 1px solid #f5f1ea;
+}
+
+.owj-wizard-nav .button {
+    padding: 12px 25px;
+    font-size: 0.9rem;
+}
+
+.owj-wizard-nav .button-primary {
+    background: #e2bfbf;
+    border-color: #d4a8a8;
+}
+
+.owj-wizard-nav .button-primary:hover {
+    background: #d4a8a8;
+    border-color: #c9a5a5;
+}
+
+/* Wizard Notice */
+.owj-wizard-notice {
+    border-left-color: #e2bfbf;
+}

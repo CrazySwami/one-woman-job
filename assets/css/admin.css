@@ -1,0 +1,327 @@
+/**
+ * One Woman Job - Admin Styles
+ * Brand Color: #F1B5B4 (Pink), #590D22 (Dark text)
+ */
+
+/* ==========================================================================
+   Admin Color Scheme Override
+   ========================================================================== */
+
+/* Admin bar branding */
+#wpadminbar {
+    background: #590D22 !important;
+}
+
+#wpadminbar .ab-item,
+#wpadminbar a.ab-item,
+#wpadminbar > #wp-toolbar span.ab-label,
+#wpadminbar > #wp-toolbar span.noticon {
+    color: #fff !important;
+}
+
+#wpadminbar .ab-top-menu > li:hover > .ab-item,
+#wpadminbar .ab-top-menu > li.hover > .ab-item {
+    background: #F1B5B4 !important;
+    color: #590D22 !important;
+}
+
+#wpadminbar .ab-submenu {
+    background: #590D22 !important;
+}
+
+#wpadminbar .ab-submenu .ab-item:hover {
+    background: #F1B5B4 !important;
+    color: #590D22 !important;
+}
+
+/* Admin menu sidebar */
+#adminmenuback,
+#adminmenuwrap,
+#adminmenu {
+    background: #590D22 !important;
+}
+
+#adminmenu a {
+    color: #fff !important;
+}
+
+#adminmenu li.menu-top:hover,
+#adminmenu li.opensub > a.menu-top,
+#adminmenu li > a.menu-top:focus {
+    background: #F1B5B4 !important;
+    color: #590D22 !important;
+}
+
+#adminmenu .wp-submenu {
+    background: #7a3a4d !important;
+}
+
+#adminmenu .wp-submenu a {
+    color: #fff !important;
+}
+
+#adminmenu .wp-submenu a:hover,
+#adminmenu .wp-submenu a:focus {
+    color: #F1B5B4 !important;
+}
+
+#adminmenu .current a.menu-top,
+#adminmenu li.wp-has-current-submenu a.wp-has-current-submenu,
+#adminmenu li.current a.menu-top {
+    background: #F1B5B4 !important;
+    color: #590D22 !important;
+}
+
+#adminmenu .wp-submenu .wp-submenu-head {
+    background: #590D22 !important;
+    color: #F1B5B4 !important;
+}
+
+#adminmenu div.wp-menu-image:before {
+    color: #F1B5B4 !important;
+}
+
+#adminmenu li.current div.wp-menu-image:before,
+#adminmenu li:hover div.wp-menu-image:before {
+    color: #590D22 !important;
+}
+
+/* Collapse button */
+#collapse-menu,
+#collapse-button {
+    color: #fff !important;
+}
+
+#collapse-button:hover {
+    background: #F1B5B4 !important;
+    color: #590D22 !important;
+}
+
+/* ==========================================================================
+   Dashboard Widgets
+   ========================================================================== */
+
+.welcome-panel {
+    background: linear-gradient(135deg, #FEF4EA 0%, #F1B5B4 100%) !important;
+    border-color: #F1B5B4 !important;
+}
+
+.welcome-panel h2,
+.welcome-panel .welcome-panel-column-content h3 {
+    color: #590D22 !important;
+}
+
+.welcome-panel .about-description,
+.welcome-panel p {
+    color: #7a3a4d !important;
+}
+
+/* Primary buttons */
+.wp-core-ui .button-primary {
+    background: #F1B5B4 !important;
+    border-color: #e09d9c !important;
+    color: #590D22 !important;
+}
+
+.wp-core-ui .button-primary:hover,
+.wp-core-ui .button-primary:focus {
+    background: #e09d9c !important;
+    border-color: #d08b8a !important;
+    color: #590D22 !important;
+}
+
+/* Links */
+#dashboard-widgets a,
+.wrap a {
+    color: #590D22;
+}
+
+#dashboard-widgets a:hover,
+.wrap a:hover {
+    color: #F1B5B4;
+}
+
+/* ==========================================================================
+   OWJ Settings Page Styles
+   ========================================================================== */
+
+.owj-settings-wrap {
+    max-width: 1200px;
+}
+
+.owj-settings-wrap h1 {
+    display: flex;
+    align-items: center;
+    color: #590D22;
+    font-family: Georgia, serif;
+}
+
+.owj-settings-wrap h1::before {
+    content: "♡";
+    margin-right: 10px;
+    color: #F1B5B4;
+    font-size: 1.2em;
+}
+
+.owj-settings-section {
+    background: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid #F1B5B4;
+    border-radius: 0 12px 12px 12px;
+    box-shadow: 0 2px 8px rgba(241, 181, 180, 0.15);
+}
+
+.owj-settings-section h2 {
+    margin-top: 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #F1B5B4;
+    color: #590D22;
+    font-family: Georgia, serif;
+}
+
+/* Tab styling */
+.nav-tab-wrapper {
+    margin-bottom: 0;
+    border-bottom-color: #F1B5B4;
+}
+
+.nav-tab {
+    background: #FEF4EA;
+    border-color: #F1B5B4;
+    color: #590D22;
+}
+
+.nav-tab:hover {
+    background: #F1B5B4;
+    color: #590D22;
+}
+
+.nav-tab-active,
+.nav-tab-active:focus,
+.nav-tab-active:focus:active,
+.nav-tab-active:hover {
+    background: #fff;
+    border-bottom-color: #fff;
+    color: #590D22;
+    border-top: 3px solid #F1B5B4;
+}
+
+/* Media uploader */
+.owj-media-upload {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.owj-media-upload .button {
+    background: #F1B5B4;
+    border-color: #e09d9c;
+    color: #590D22;
+}
+
+.owj-media-upload .button:hover {
+    background: #e09d9c;
+    border-color: #d08b8a;
+}
+
+.owj-image-preview {
+    margin-top: 10px;
+}
+
+.owj-image-preview img {
+    border-radius: 0 12px 12px 12px;
+    border: 2px solid #F1B5B4;
+}
+
+/* Gallery */
+.owj-gallery-item {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+}
+
+.owj-gallery-item img {
+    display: block;
+    margin-bottom: 5px;
+    border-radius: 0 8px 8px 8px;
+    border: 2px solid #F1B5B4;
+}
+
+#owj-gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 15px;
+    padding: 15px;
+    background: #FEF4EA;
+    border-radius: 0 12px 12px 12px;
+    min-height: 100px;
+    border: 1px dashed #F1B5B4;
+}
+
+/* Form inputs */
+.owj-settings-section input[type="text"],
+.owj-settings-section input[type="email"],
+.owj-settings-section input[type="url"],
+.owj-settings-section input[type="number"],
+.owj-settings-section textarea {
+    border-color: #F1B5B4;
+    border-radius: 0 8px 8px 8px;
+}
+
+.owj-settings-section input[type="text"]:focus,
+.owj-settings-section input[type="email"]:focus,
+.owj-settings-section input[type="url"]:focus,
+.owj-settings-section input[type="number"]:focus,
+.owj-settings-section textarea:focus {
+    border-color: #590D22;
+    box-shadow: 0 0 0 1px #590D22;
+}
+
+/* ==========================================================================
+   Login Page (via admin)
+   ========================================================================== */
+
+.login h1 a {
+    background-image: none !important;
+    font-family: Georgia, serif !important;
+    font-size: 28px !important;
+    text-indent: 0 !important;
+    width: auto !important;
+    height: auto !important;
+    color: #590D22 !important;
+}
+
+.login h1 a::before {
+    content: "ONE WOMAN JOB";
+}
+
+.login form {
+    border-radius: 0 20px 20px 20px !important;
+    border-color: #F1B5B4 !important;
+}
+
+.login #backtoblog a,
+.login #nav a {
+    color: #590D22 !important;
+}
+
+.login #backtoblog a:hover,
+.login #nav a:hover {
+    color: #F1B5B4 !important;
+}
+
+body.login {
+    background: #FEF4EA !important;
+}
+
+.login .button-primary {
+    background: #F1B5B4 !important;
+    border-color: #e09d9c !important;
+    color: #590D22 !important;
+}
+
+.login .button-primary:hover {
+    background: #e09d9c !important;
+}
